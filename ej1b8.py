@@ -29,3 +29,15 @@ for i in range(comunicaciones):
 	costes_de_tarifa.append(tupla)
 
 	print("La comunicación tiene un coste de {}".format(i + 1), end = ' ')
+
+	if costes_de_tarifa[i][0] == "0":
+		if costes_de_tarifa[i][1] == "1":
+			print("{} céntimo".format(costes_de_tarifa[i][1]))
+		else:
+			print("{} céntimos".format(costes_de_tarifa[i][1]))
+
+	elif:
+		if costes_de_tarifa[i][1] == "1":
+			print("{} euro/s y {} céntimo".format(costes_de_tarifa[i][0], costes_de_tarifa[i][1]))
+		else:
+			print("{} euro/s y {} céntimos".format(costes_de_tarifa[i][0], costes_de_tarifa[i][1]))
