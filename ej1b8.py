@@ -44,3 +44,7 @@ for i in range(comunicaciones):
 			print("{} euro/s y {} céntimo".format(costes_de_tarifa[i][0], costes_de_tarifa[i][1]))
 		else:
 			print("{} euro/s y {} céntimos".format(costes_de_tarifa[i][0], costes_de_tarifa[i][1]))
+
+total_euros, total_centi = convertir_a_euros(acumulador)
+
+print("El coste total de las comunicaciones es de: {} euro/s y {} céntimos".format(total_euros, total_centi))
