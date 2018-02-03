@@ -17,3 +17,15 @@ for i in range(comunicaciones):
 	minutos = int(tiempo.split(':')[1])
 
 	segundos = int(tiempo.split(':')[2])
+
+	coste = calcular_coste(pasar_a_segundos(horas, minutos, segundos), tarifa)
+
+	acumulador += coste
+
+	euros, centi = convertir_a_euros(coste)
+
+	tupla = (euros, centi)
+
+	costes_de_tarifa.append(tupla)
+
+	print("La comunicación tiene un coste de {}".format(i + 1), end = ' ')
