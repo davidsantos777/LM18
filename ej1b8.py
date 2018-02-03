@@ -36,7 +36,10 @@ for i in range(comunicaciones):
 		else:
 			print("{} céntimos".format(costes_de_tarifa[i][1]))
 
-	elif:
+	elif costes_de_tarifa[i][1] == "0":
+		print("{} euro/s".format(costes_de_tarifa[i][0]))
+
+	else:
 		if costes_de_tarifa[i][1] == "1":
 			print("{} euro/s y {} céntimo".format(costes_de_tarifa[i][0], costes_de_tarifa[i][1]))
 		else:
