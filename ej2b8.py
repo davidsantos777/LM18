@@ -47,3 +47,17 @@ for i, _ in enumerate(lista):
 	
 		else:
 			print("%d céntimos"%(costes_de_tarifa[i][1]))
+
+	elif costes_de_tarifa[i][1] == "0":
+		print("%d euro/s"%(costes_de_tarifa[i][0]))
+
+	else:
+		if costes_de_tarifa[i][1] == "1":
+			print("%d euro/s y %d céntimo"%(costes_de_tarifa[i][0], costes_de_tarifa[i][1]))
+
+		else:
+			print("%d euro/s y %d céntimos"%(costes_de_tarifa[i][0], costes_de_tarifa[i][1]))
+
+total_euros, total_centi = convertir_a_euros(acumulador)
+
+print("El coste total es de %d euro/s y %d céntimos"%(total_euros, total_centi))
