@@ -35,3 +35,15 @@ for i in lista:
 	done = (euros,centi)
 
 	costes_de_tarifa.append(done)
+
+for i, _ in enumerate(lista):
+
+	print("El coste de la comunicación es: %d "%(i + 1), end = " ")
+	
+	if costes_de_tarifa[i][0] == "0":
+		
+		if costes_de_tarifa[i][1] == "1":
+			print("%d céntimo"%(costes_de_tarifa[i][1]))
+	
+		else:
+			print("%d céntimos"%(costes_de_tarifa[i][1]))
